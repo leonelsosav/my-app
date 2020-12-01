@@ -20,7 +20,9 @@ public class TestFac {
 	  public void setUp() throws Exception {
 		  System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		  System.setProperty("webdriver.chrome.whitelistedIps", "");
-	    driver = new ChromeDriver();
+		  ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--no-sandbox");
+	    driver = new ChromeDriver(options);
 	    baseUrl = "https://www.google.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  }
