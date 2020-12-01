@@ -54,7 +54,7 @@ public class TestDAOIntegration extends DBTestCase{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		assertEquals(actualRows+1, con.getRowCount("Alumno"));
+		assertEquals(actualRows, con.getRowCount("Alumno"));
 	}
 	
 	@Test
