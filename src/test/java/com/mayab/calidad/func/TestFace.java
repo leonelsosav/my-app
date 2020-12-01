@@ -30,13 +30,8 @@ public class TestFace {
 
 	  @Test
 	  public void testUntitledTestCase() throws Exception {
-	    driver.get("https://www.facebook.com/");
-	    driver.findElement(By.id("pass")).clear();
-	    driver.findElement(By.id("pass")).sendKeys("");
-	    driver.findElement(By.id("email")).clear();
-	    driver.findElement(By.id("email")).sendKeys("leonelsosav");
-	    driver.findElement(By.name("login")).click();
-	    assertEquals(driver.findElement(By.className("_9ay7")).getText(), "The password you’ve entered is incorrect. Forgot Password?");
+	    driver.get("https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses");
+	    assertEquals("Preguntas y respuestas sobre la enfermedad por coronavirus (COVID-19)", driver.getTitle());
 	  }
 
 	  @After
