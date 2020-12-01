@@ -22,7 +22,7 @@ public class TestFac {
 		  System.setProperty("webdriver.chrome.whitelistedIps", "");
 		  ChromeOptions options = new ChromeOptions();
 	        options.addArguments("--no-sandbox");
-	        options.addArguments("--remote-debugging-port=9222");
+	        options.addArguments("--remote-debugging-port=15227");
 	    driver = new ChromeDriver(options);
 	    baseUrl = "https://www.google.com/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
