@@ -8,18 +8,13 @@ services: mysql
 before deploy:
     -pip install travis-wait-improved
 install: true
-    - sudo mv -f ~/chromedriver /usr/local/share/
 before_script:
     - sudo apt-get install libnss3
-    - sudo cp chromedriver /usr/local/bin/.
-    - sudo chmod +x /usr/local/bin/chromedriver
     - export DISPLAY=:99.0
     - sleep 3
 script:
     - mvn install
     - whereis google-chrome-stable
-    - whereis chromedriver
-    - mvn -Dtest=TestFacebook -e
 before_install:
   - sudo apt-get update -q
   - sudo apt-get install gcc-4.8 -y
