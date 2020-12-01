@@ -20,7 +20,7 @@ import java.io.InputStream;
 import java.sql.SQLException;
 
 public class TestDAOIntegration extends DBTestCase{
-
+	//Comentario
 	public TestDAOIntegration(String name) {
 		super(name);
 		System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_DRIVER_CLASS, "com.mysql.jdbc.Driver");        
