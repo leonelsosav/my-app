@@ -36,7 +36,7 @@ public class TestFace {
 	    driver.findElement(By.id("email")).clear();
 	    driver.findElement(By.id("email")).sendKeys("leonelsosav");
 	    driver.findElement(By.name("login")).click();
-	    assertEquals(driver.findElement(By.className("_9ay7")).getText(), "La contraseña que has introducido es incorrecta. ¿Has olvidado la contraseña?");
+	    assertEquals(driver.findElement(By.className("_9ay7")).getText(), "The password you’ve entered is incorrect. Forgot Password");
 	  }
 
 	  @After
