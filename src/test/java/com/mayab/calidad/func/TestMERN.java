@@ -11,7 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class TestFace {
+public class TestMERN {
 	  private WebDriver driver;
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
